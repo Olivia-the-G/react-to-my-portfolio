@@ -1,2 +1,5 @@
-# react-to-my-portfolio
-This is my updated professional portfolio using React to render as a single page application
+# React to My Portfolio
+
+## Description
+
+This is my professional portfolio created using React
