@@ -19,12 +19,16 @@ header {
   color: #2a2c46;
 }
 
+header h1 {
+  font-size: 40px;
+}
+
 footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px 20px;
-  background-color: #919bf5;
+  background-color: #575868;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px 200px;
 }
@@ -57,6 +61,7 @@ nav ul li a {
 a {
   text-decoration: none;
   color: #acacac;
+  font-size: 20px;
 }
 
 /* main classes */
@@ -73,7 +78,6 @@ a {
 
 .card {
   margin: 10px;
-  padding: 10px;
   border: 1px solid #2c2c2c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #2c2c2c;
@@ -131,3 +135,59 @@ a {
 
 /* Projects Section */
 
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.portfolio-card h1 {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.project-card {
+  margin: 20px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #2c2c2c;
+  position: relative;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.project-card h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #2a2c46;
+  opacity: 0; /* Add this line */
+  transition: opacity 0.3s ease-in-out; /* Add this line */
+}
+
+.project-card:hover .overlay {
+  opacity: 0.75;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  opacity: 1;
+}
