@@ -9,3 +9,5 @@ function ResumeComponent() {
     </div>
   );
 }
+
+export default ResumeComponent;

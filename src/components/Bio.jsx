@@ -3,7 +3,7 @@ function BioComponent() {
     <div>
       <section className="bio-card row">
         <div id="bio-photo col">
-          <img src="" alt="Olivia Gowan Photo" />
+          <img src="src/assets/IMG_0046.jpg" alt="Olivia Gowan Photo" />
         </div>
         <div id="bio-text col">
           <h1>Hey👋</h1>

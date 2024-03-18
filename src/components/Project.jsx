@@ -1,14 +1,14 @@
-
+const gitHubUrl = "https://github.com/Olivia-the-G/blogger";
+const deployedUrl = "https://blogger-like-frogger-59f0220c1556.herokuapp.com/";
 
 function ProjectComponent() {
   return (
     <div>
       <section className="project-card col">
         <h1>Project #</h1>
-        <img src="">
-          <a className="hide" href="">Deployed Project</a>
-          <a className="hide" href="">Github Repo</a>
-        </img>
+        <img src="../assets/blogger-like-frogger.png"></img>
+        <a className="hide" href={deployedUrl}>Deployed Project</a>
+        <a className="hide" href={gitHubUrl}>Github Repo</a>
       </section>
     </div>
   );
