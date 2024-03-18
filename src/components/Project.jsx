@@ -1,15 +1,35 @@
-const gitHubUrl = "https://github.com/Olivia-the-G/blogger";
-const deployedUrl = "https://blogger-like-frogger-59f0220c1556.herokuapp.com/";
-
 function ProjectComponent() {
+  const projects = [
+    {
+      title: "Blogger",
+      deployedUrl: "https://blogger-like-frogger-59f0220c1556.herokuapp.com/",
+      gitHubUrl: "https://github.com/Olivia-the-G/blogger",
+      image: "blogger-like-frogger.png",
+    },
+    {
+      title: "Hungry Mikey",
+      deployedUrl: "https://hungry-hungry-mikey-f614bbce79a1.herokuapp.com/game",
+      gitHubUrl: "https://github.com/Olivia-the-G/Hungry_Mikey",
+      image: "hungry-hungry-mikey.png",
+    },
+    {
+      title: "Weather Dashy",
+      deployedUrl: "https://olivia-the-g.github.io/weather-dashy/",
+      gitHubUrl: "https://github.com/Olivia-the-G/weather-dashy",
+      image: "weather-dashy.png",
+    }
+  ];
+
   return (
     <div>
-      <section className="card project-card col">
-        <h1>Project #</h1>
-        <img src="../assets/blogger-like-frogger.png"></img>
-        <a className="hide" href={deployedUrl}>Deployed Project</a>
-        <a className="hide" href={gitHubUrl}>Github Repo</a>
-      </section>
+      {projects.map((project, index) => (
+        <section key={index} className="card project-card col">
+          <h1>{project.title}</h1>
+          <img src={project.image} alt={project.title} />
+          <a className="hide" href={project.deployedUrl}>Deployed Project</a>
+          <a className="hide" href={project.gitHubUrl}>Github Repo</a>
+        </section>
+      ))}
     </div>
   );
 };

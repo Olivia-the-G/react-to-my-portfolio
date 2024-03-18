@@ -4,8 +4,8 @@ import ContactComponent from "./components/Contact";
 import FooterComponent from "./components/Footer";
 import HeaderComponent from "./components/Header";
 import NavComponent from "./components/Nav";
-import ProjectComponent from "./components/Project";
 import ResumeComponent from "./components/Resume";
+import PortfolioComponent from './components/Portfolio';
 
 function App() {
   return (
@@ -13,11 +13,10 @@ function App() {
       <HeaderComponent />
       <NavComponent />
       <BioComponent />
-      <ProjectComponent />
+      <PortfolioComponent />
       <ResumeComponent />
       <ContactComponent />
       <FooterComponent />
-
     </div>
   );
 };
