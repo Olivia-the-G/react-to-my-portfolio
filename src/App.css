@@ -1,3 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  color: #acacac;
+  background-color: rgb(37, 37, 37);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #919bf5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #2a2c46;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #919bf5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #919bf5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2a2c46;
+}
+
+a {
+  text-decoration: none;
+  color: #acacac;
+}
+
 img {
   width: 200px; 
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #2c2c2c;
+}
+
+.bio-card {
+  padding: 30px;
+}
+
+.bio-card img {
+  border-radius: 50%;
+  margin: 15px;
+  width: 400px;
+}
+
+.bio-card h1 {
+  margin: 15px;
+  font-size: 50px;
+}
+
+.bio-card p {
+  margin: 25px 15px 15px 15px;
+  font-size: 20px;
+}
+
+.bio-text {
+  margin: 10px 30px;
 }

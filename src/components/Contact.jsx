@@ -1,7 +1,7 @@
 function ContactComponent() {
   return (
     <div>
-      <section className="contact-card">
+      <section className="card contact-card">
         <div className="col">
           <h1>Contact Me</h1>
           <form className="row">

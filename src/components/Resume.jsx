@@ -1,7 +1,7 @@
 function ResumeComponent() {
   return (
     <div>
-      <section className="resume-card col">
+      <section className="card resume-card col">
         <h1>Resume</h1>
         
 
