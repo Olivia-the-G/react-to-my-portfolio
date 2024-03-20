@@ -54,19 +54,20 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
-  margin: 0 10px;
-}
-
 nav ul li a {
   text-decoration: none;
   color: #2a2c46;
+  margin: 0 10px;
 }
 
 a {
   text-decoration: none;
   color: #acacac;
   font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* main classes */
