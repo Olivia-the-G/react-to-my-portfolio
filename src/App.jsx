@@ -1,3 +1,5 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import BioComponent from "./components/Bio";
 import ContactComponent from "./components/Contact";
@@ -9,16 +11,21 @@ import PortfolioComponent from './components/Portfolio';
 
 function App() {
   return (
-    <div>
-      <HeaderComponent />
-      <NavComponent />
-      <BioComponent />
-      <PortfolioComponent />
-      <ResumeComponent />
-      <ContactComponent />
-      <FooterComponent />
-    </div>
+    <Router>
+      <div>
+        <HeaderComponent />
+        <NavComponent />
+        <Routes>
+          <Route path="/" element={<BioComponent />} />
+          <Route path="/portfolio" element={<PortfolioComponent />} />
+          <Route path="/resume" element={<ResumeComponent />} />
+          <Route path="/contact" element={<ContactComponent />} />
+        </Routes>
+        <FooterComponent />
+      </div>
+    </Router>
   );
 };
+
 
 export default App;
