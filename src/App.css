@@ -27,10 +27,15 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 20px;
   background-color: #2c2c2c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px 200px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 50px;
+  }
 }
 
 /* Navigation */
@@ -191,6 +196,73 @@ a {
   text-align: center;
   padding: 10px;
   opacity: 1;
+}
+
+/* Resume Section  */
+.resume-card {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-card h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.resume-card a {
+  padding: 10px;
+  margin: 20px 5px 5px 5px;
+  font-size: 20px;
+  background-color: #919bf5;
+  color: #2a2c46;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: fit-content;
+  align-self: center;
+}
+
+.download-box {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.download-box h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.download-box ul {
+  text-align: center;
+  list-style: none;
+}
+
+.download-box li {
+  font-size: 20px;
+}
+
+.box {
+  padding: 10px 10px 20px 10px;
+  margin: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    margin: 20px;
+  }
+
+  .resume-card  {
+    padding: 40px 20px;
+  }
+  
 }
 
 /* Contact Section */
