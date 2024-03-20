@@ -1,3 +1,6 @@
+import { SocialIcon } from "react-social-icons";
+import 'react-social-icons/github'
+
 function ProjectComponent() {
   const projects = [
     {
@@ -34,7 +37,7 @@ function ProjectComponent() {
           <img src={project.image} alt={project.title} />
           <div className="overlay">
             <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
-            <a className="overlay-text" href={project.gitHubUrl}>Github Repo</a>
+            <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
           </div>
         </section>
       ))}

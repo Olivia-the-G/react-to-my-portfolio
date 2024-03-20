@@ -187,12 +187,12 @@ a {
 }
 
 .project-card:hover .overlay {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .overlay-text {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
   opacity: 1;
