@@ -17,6 +17,12 @@ function ProjectComponent() {
       deployedUrl: "https://olivia-the-g.github.io/weather-dashy/",
       gitHubUrl: "https://github.com/Olivia-the-G/weather-dashy",
       image: "/src/assets/weather-dashy.png",
+    },
+    {
+      title: "Kumamo",
+      deployedUrl: "https://olivia-the-g.github.io/culinary_curation_app/",
+      gitHubUrl: "https://github.com/Olivia-the-G/culinary_curation_app",
+      image: "/src/assets/kumamo.png",
     }
   ];
 
