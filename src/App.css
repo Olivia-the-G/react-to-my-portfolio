@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #acacac;
   background-color: #252525;
 }
@@ -54,7 +54,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul li a {
+nav ul a {
   text-decoration: none;
   color: #2a2c46;
   margin: 0 10px;
@@ -146,7 +146,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px;
-  
+
 }
 
 .portfolio-card h1 {
@@ -154,12 +154,28 @@ a:hover {
   font-size: 30px;
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .project-card {
   margin: 20px;
   border: 1px solid #2c2c2c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #2c2c2c;
+  background-color: #313131;
   position: relative;
+  width: 35%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
 }
 
 .project-card img {
@@ -183,8 +199,10 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   background-color: #2a2c46;
-  opacity: 0; /* Add this line */
-  transition: opacity 0.3s ease-in-out; /* Add this line */
+  opacity: 0;
+  /* Add this line */
+  transition: opacity 0.3s ease-in-out;
+  /* Add this line */
 }
 
 .project-card:hover .overlay {
@@ -260,10 +278,10 @@ a:hover {
     margin: 20px;
   }
 
-  .resume-card  {
+  .resume-card {
     padding: 40px 20px;
   }
-  
+
 }
 
 /* Contact Section */
@@ -272,7 +290,7 @@ a:hover {
   padding: 40px;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .contact-card h1 {
@@ -290,7 +308,7 @@ a:hover {
   margin: 20px;
 }
 
-.info-box{
+.info-box {
   padding: 10px;
 }
 

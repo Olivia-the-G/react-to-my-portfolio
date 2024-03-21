@@ -26,11 +26,23 @@ function ProjectComponent() {
       deployedUrl: "https://olivia-the-g.github.io/culinary_curation_app/",
       gitHubUrl: "https://github.com/Olivia-the-G/culinary_curation_app",
       image: "/src/assets/kumamo.png",
+    },
+    {
+      title: "Wine Blog",
+      deployedUrl: "https://olivia-the-g.github.io/culinary_curation_app/",
+      gitHubUrl: "https://github.com/Olivia-the-G/next-new-niche",
+      image: "/src/assets/kumamo.png",
+    },
+    {
+      title: "Notary Express",
+      deployedUrl: "https://floating-lowlands-42980-b282d39f2668.herokuapp.com/",
+      gitHubUrl: "https://github.com/Olivia-the-G/notary-express",
+      image: "/src/assets/notary-express.png",
     }
   ];
 
   return (
-    <div className="row">
+    <div className="projects-container row">
       {projects.map((project, index) => (
         <section key={index} className="card project-card col">
           <h2>{project.title}</h2>
