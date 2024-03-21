@@ -25,7 +25,7 @@ React component library - [Learn More](https://mui.com/core/)
 Developing tool used for server config - [Learn More](https://vitejs.dev/)
 
 ## Deployment
-
+Here is the portfolio deployed using Netlify - https://olivia-gowan-portfolio.netlify.app/
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
