@@ -7,7 +7,7 @@ function ProjectComponent() {
       title: "Blogger",
       deployedUrl: "https://blogger-like-frogger-59f0220c1556.herokuapp.com/",
       gitHubUrl: "https://github.com/Olivia-the-G/blogger",
-      image: "/src/assets/blogger-like-frogger.png",
+      image: "public/blogger-like-frogger.png",
     },
     {
       title: "Hungry Mikey",
