@@ -28,10 +28,10 @@ function ProjectComponent() {
       image: "/src/assets/kumamo.png",
     },
     {
-      title: "Wine Blog",
-      deployedUrl: "https://olivia-the-g.github.io/culinary_curation_app/",
-      gitHubUrl: "https://github.com/Olivia-the-G/next-new-niche",
-      image: "/src/assets/kumamo.png",
+      title: "My First Portfolio Site",
+      deployedUrl: "https://olivia-the-g.github.io/Professional-Portfolio/#",
+      gitHubUrl: "https://github.com/Olivia-the-G/Professional-Portfolio",
+      image: "/src/assets/professional-portfolio.png",
     },
     {
       title: "Notary Express",

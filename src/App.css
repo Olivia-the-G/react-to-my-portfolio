@@ -92,7 +92,7 @@ a:hover {
 /* About Me Section */
 
 .bio-card {
-  padding: 30px;
+  padding: 40px;
 }
 
 .bio-card img {
@@ -109,11 +109,12 @@ a:hover {
 
 .bio-card p {
   margin: 25px 15px 15px 15px;
-  font-size: 20px;
+  font-size: 21px;
+  line-height: 28px;
 }
 
 .bio-text {
-  margin: 10px 30px;
+  margin: 10px 40px;
 }
 
 @media screen and (max-width: 768px) {
