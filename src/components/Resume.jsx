@@ -3,7 +3,7 @@ function ResumeComponent() {
     <div>
       <section className="card resume-card col">
         <h1>Resume</h1>
-        <a href="/assets/Olivia-Gowan-Resume.pdf" download>Download Resume</a>
+        <a href="/Images/Olivia-Gowan-Resume.pdf" download>Download Resume</a>
 
         <div className="download-box row"> 
           <div className="box">
