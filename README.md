@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my professional portfolio created using **React**. The website was made up using **MUI Core**. This is an open source React library used for creating responsive web applications. See [Technologies Used](#technologies-used) to learn more about these features. 
+This is my professional portfolio created using **React**.
 
 This portfolio is a compilation of all of my best projects to demonstrate my knowledge and skills to future employers. I am a UofT Bootcamp student just starting out in web development, but I am hoping to become a back-end dev once I am able to refine my learning and experience. 
 
@@ -17,9 +17,6 @@ This portfolio is a compilation of all of my best projects to demonstrate my kno
 
 ### React
 Single paged application developing framework - [Learn More](https://react.dev/)
-
-### MUI Core
-React component library - [Learn More](https://mui.com/core/)
 
 ### Vite
 Developing tool used for server config - [Learn More](https://vitejs.dev/)
