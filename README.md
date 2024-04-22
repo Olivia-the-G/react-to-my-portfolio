@@ -9,6 +9,7 @@ This portfolio is a compilation of all of my best projects to demonstrate my kno
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
+- [Preview](#preview)
 - [Deployment](#deployment)
 - [License](#license)
 - [Contact](#contact)
@@ -20,6 +21,9 @@ Single paged application developing framework - [Learn More](https://react.dev/)
 
 ### Vite
 Developing tool used for server config - [Learn More](https://vitejs.dev/)
+
+## Preview
+![Portfolio-demo](https://github.com/Olivia-the-G/react-to-my-portfolio/assets/130778807/e6b6242f-04d0-43fb-ba1c-b8e759843e0c)
 
 ## Deployment
 Here is the portfolio deployed using Netlify - https://olivia-gowan-portfolio.netlify.app/
