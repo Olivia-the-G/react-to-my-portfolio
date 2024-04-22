@@ -4,7 +4,7 @@
 
 This is my professional portfolio created using **React**.
 
-This portfolio is a compilation of all of my best projects to demonstrate my knowledge and skills to future employers. I am a UofT Bootcamp student just starting out in web development, but I am hoping to become a back-end dev once I am able to refine my learning and experience. 
+This portfolio is a compilation of all of my best projects to demonstrate my knowledge and skills to future employers. I am a UofT Bootcamp graduate just starting out in web development, but I am hoping to become a back-end dev once I am able to refine my learning and experience. 
 
 ## Table of Contents
 
