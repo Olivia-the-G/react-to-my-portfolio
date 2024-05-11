@@ -6,6 +6,8 @@ This is my professional portfolio created using **React**.
 
 This portfolio is a compilation of all of my best projects to demonstrate my knowledge and skills to future employers. I am a UofT Bootcamp graduate just starting out in web development, but I am hoping to become a back-end dev once I am able to refine my learning and experience. 
 
+Currently the website only has a front end, but I will be implementing a back end in the near future. 
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
@@ -22,11 +24,14 @@ Single paged application developing framework - [Learn More](https://react.dev/)
 ### Vite
 Developing tool used for server config - [Learn More](https://vitejs.dev/)
 
+### Netlify 
+Site used for deployment - [Learn More](https://www.netlify.com/)
+
 ## Preview
 ![Portfolio-demo](https://github.com/Olivia-the-G/react-to-my-portfolio/assets/130778807/e6b6242f-04d0-43fb-ba1c-b8e759843e0c)
 
 ## Deployment
-Here is the portfolio deployed using Netlify - https://olivia-gowan-portfolio.netlify.app/
+Here is the portfolio deployed using Netlify - [https://olivia-gowan-portfolio.netlify.app/](https://olivia-gowan-portfolio.netlify.app/)
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
