@@ -291,26 +291,37 @@ a:hover {
   padding: 40px;
   display: flex;
   justify-content: center;
-
 }
 
 .contact-card h1 {
-  text-align: center;
-  margin: 20px;
-  font-size: 30px;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.contact-card img {
+  width: 40%;
+
+}
+
+.big-contact-box {
+  width: 90%;
+  margin: 30px;
 }
 
 .form-box {
   display: flex;
-  align-items: center;
   padding: 30px;
-  background-color: #2a2c46;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  width: 100%;
 }
 
 .info-box {
   padding: 10px;
+  margin-left: 10px;
+}
+
+.info-box p {
+  font-size: 20px;
 }
 
 .mess-box {
@@ -337,8 +348,8 @@ textarea {
 
 button {
   padding: 10px;
-  margin: 20px 5px 5px 5px;
-  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  font-size: 15px;
   background-color: #919bf5;
   color: #2a2c46;
   border: none;
