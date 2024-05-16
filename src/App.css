@@ -362,6 +362,12 @@ button {
   width: fit-content;
 }
 
+button a {
+  text-decoration: none;
+  color: #2a2c46;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .form-box {
     display: flex;

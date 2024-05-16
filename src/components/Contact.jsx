@@ -12,7 +12,7 @@ function ContactComponent() {
             <div className="outer-form row">
               <div className="info-box col">
                 <p>Here's my email - olivia.a.gowan@gmail.com</p>
-                <button className="emailBtn" type="button">Send Me a Message</button>
+                <button className="emailBtn" type="button"><a href="mailto:olivia.a.gowan@gmail.com">Send Me a Message</a></button>
                 <p>You can also find me on GitHub, LinkedIn, and Stack Overflow by clicking the icons below!</p>
 
 
