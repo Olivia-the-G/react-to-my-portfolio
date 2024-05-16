@@ -11,8 +11,11 @@ function ContactComponent() {
 
             <div className="outer-form row">
               <div className="info-box col">
-                <p>olivia.a.gowan@gmail.com</p>
+                <p>Here's my email - olivia.a.gowan@gmail.com</p>
                 <button className="emailBtn" type="button">Send Me a Message</button>
+                <p>You can also find me on GitHub, LinkedIn, and Stack Overflow by clicking the icons below!</p>
+
+
                 {/* <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" required />
                 <label htmlFor="email">Email:</label>
