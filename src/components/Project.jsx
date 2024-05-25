@@ -58,3 +58,7 @@ function ProjectComponent() {
 };
 
 export default ProjectComponent;
+
+// To do: add carosel for projects 
+
+// To do: add different sections for front end and back end projects
