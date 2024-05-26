@@ -42,7 +42,14 @@ function ProjectComponent() {
   ];
 
   return (
-    <div className="projects-container row">
+    <div className="portfolio-page col">
+      <div>
+        <h1>Front End Projects</h1>
+      </div>
+      <div>
+        <h1>Back End Projects</h1>
+      </div>
+      <div className="projects-container row">
       {projects.map((project, index) => (
         <section key={index} className="card project-card col">
           <h2>{project.title}</h2>
@@ -53,8 +60,13 @@ function ProjectComponent() {
           </div>
         </section>
       ))}
+      </div>
     </div>
   );
 };
 
 export default ProjectComponent;
+
+// To do: add carosel for projects 
+
+// To do: add different sections for front end and back end projects
