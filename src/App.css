@@ -165,23 +165,21 @@ a:hover {
   justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 20px;
-}
+} */
 
 .project-card {
-  margin: 30px;
   border: 1px solid #2c2c2c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #313131;
   position: relative;
-  width: 25%;
-} */
+}
 
 
 /* @media screen and (max-width: 768px) {
   .project-card {
     width: 100%;
   }
-}
+} */
 
 .project-card img {
   width: 100%;
@@ -193,7 +191,7 @@ a:hover {
 .project-card h2 {
   text-align: center;
   padding: 10px;
-} */
+}
 
 .overlay {
   position: absolute;

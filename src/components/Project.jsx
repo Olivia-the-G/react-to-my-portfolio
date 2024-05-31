@@ -68,7 +68,7 @@ function ProjectComponent() {
         draggable={false}
         showDots={true}
         responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
+        // ssr={true} // means to render carousel on server-side.
         infinite={true}
         keyBoardControl={true}
         customTransition="all .5"
@@ -80,7 +80,7 @@ function ProjectComponent() {
       >
 
         <div className="project-1"> 
-        <section className="project-card col">
+        <section className="card project-card col">
               <h2>{projects[0].title}</h2>
               <img src={projects[0].image} alt={projects[0].title} />
               <div className="overlay">
@@ -90,7 +90,7 @@ function ProjectComponent() {
             </section>
         </div>
         <div className="project-2">
-        <section className="project-card col">
+        <section className="card project-card col">
               <h2>{projects[1].title}</h2>
               <img src={projects[1].image} alt={projects[1].title} />
               <div className="overlay">
