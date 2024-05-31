@@ -3,7 +3,7 @@ import 'react-social-icons/github'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function ProjectComponent() {
+function ProjectComponent({ deviceType }) {
   const projects = [
     {
       title: "Blogger",
@@ -68,36 +68,79 @@ function ProjectComponent() {
         draggable={false}
         showDots={true}
         responsive={responsive}
-        // ssr={true} // means to render carousel on server-side.
+        ssr={true} // means to render carousel on server-side.
         infinite={true}
+        autoPlay={deviceType !== "mobile"}
+        autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
 
-        <div className="project-1"> 
-        <section className="card project-card col">
-              <h2>{projects[0].title}</h2>
-              <img src={projects[0].image} alt={projects[0].title} />
-              <div className="overlay">
-                <a className="overlay-text" href={projects[0].deployedUrl}>Deployed Project</a>
-                <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[0].gitHubUrl} />
-              </div>
-            </section>
+        <div className="project-1">
+          <section className="card project-card col">
+            <h2>{projects[0].title}</h2>
+            <img src={projects[0].image} alt={projects[0].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[0].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[0].gitHubUrl} />
+            </div>
+          </section>
         </div>
         <div className="project-2">
-        <section className="card project-card col">
-              <h2>{projects[1].title}</h2>
-              <img src={projects[1].image} alt={projects[1].title} />
-              <div className="overlay">
-                <a className="overlay-text" href={projects[1].deployedUrl}>Deployed Project</a>
-                <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[1].gitHubUrl} />
-              </div>
-            </section>
+          <section className="card project-card col">
+            <h2>{projects[1].title}</h2>
+            <img src={projects[1].image} alt={projects[1].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[1].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[1].gitHubUrl} />
+            </div>
+          </section>
+        </div>
+        <div className="project-3">
+          <section className="card project-card col">
+            <h2>{projects[2].title}</h2>
+            <img src={projects[2].image} alt={projects[2].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[2].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[2].gitHubUrl} />
+            </div>
+          </section>
+        </div>
+        <div className="project-4">
+          <section className="card project-card col">
+            <h2>{projects[3].title}</h2>
+            <img src={projects[3].image} alt={projects[3].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[3].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[3].gitHubUrl} />
+            </div>
+          </section>
+        </div>
+        <div className="project-5">
+          <section className="card project-card col">
+            <h2>{projects[4].title}</h2>
+            <img src={projects[4].image} alt={projects[4].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[4].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[4].gitHubUrl} />
+            </div>
+          </section>
+        </div>
+        <div className="project-6">
+          <section className="card project-card col">
+            <h2>{projects[5].title}</h2>
+            <img src={projects[5].image} alt={projects[5].title} />
+            <div className="overlay">
+              <a className="overlay-text" href={projects[5].deployedUrl}>Deployed Project</a>
+              <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={projects[5].gitHubUrl} />
+            </div>
+          </section>
         </div>
       </Carousel>;
       <div>
