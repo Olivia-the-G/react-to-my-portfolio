@@ -1,7 +1,8 @@
 import { SocialIcon } from "react-social-icons";
-import 'react-social-icons/github'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-function ProjectComponent() {
+function ProjectComponent({ deviceType }) {
   const projects = [
     {
       title: "Blogger",
@@ -41,26 +42,64 @@ function ProjectComponent() {
     }
   ];
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+
   return (
-    <div className="portfolio-page col">
+    <div className="portfolio-carousel">
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={deviceType !== "mobile"}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={deviceType}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+        {projects.map((project, index) => (
+          <div key={index} className={`project-${index + 1}`}>
+            <section className="card project-card col">
+              <h2>{project.title}</h2>
+              <img src={project.image} alt={project.title} />
+              <div className="overlay">
+                <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
+                <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
+              </div>
+            </section>
+          </div>
+        ))}
+      </Carousel>;
       <div>
         <h1>Front End Projects</h1>
       </div>
       <div>
         <h1>Back End Projects</h1>
       </div>
-      <div className="projects-container row">
-      {projects.map((project, index) => (
-        <section key={index} className="card project-card col">
-          <h2>{project.title}</h2>
-          <img src={project.image} alt={project.title} />
-          <div className="overlay">
-            <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
-            <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
-          </div>
-        </section>
-      ))}
-      </div>
+
     </div>
   );
 };
