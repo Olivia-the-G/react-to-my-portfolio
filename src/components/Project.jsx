@@ -3,13 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function ProjectComponent({ deviceType }) {
-  const projects = [
-    {
-      title: "Blogger",
-      deployedUrl: "https://blogger-like-frogger-59f0220c1556.herokuapp.com/",
-      gitHubUrl: "https://github.com/Olivia-the-G/blogger",
-      image: "blogger-like-frogger.png",
-    },
+  
+  const frontEndProjects = [
     {
       title: "Hungry Mikey",
       deployedUrl: "https://hungry-hungry-mikey-f614bbce79a1.herokuapp.com/game",
@@ -29,7 +24,7 @@ function ProjectComponent({ deviceType }) {
       image: "kumamo.png",
     },
     {
-      title: "My First Portfolio Site",
+      title: "First Portfolio",
       deployedUrl: "https://olivia-the-g.github.io/Professional-Portfolio/#",
       gitHubUrl: "https://github.com/Olivia-the-G/Professional-Portfolio",
       image: "professional-portfolio.png",
@@ -42,16 +37,61 @@ function ProjectComponent({ deviceType }) {
     }
   ];
 
+  const backEndProjects = [
+    {
+      title: "Blogger",
+      deployedUrl: "https://blogger-like-frogger-59f0220c1556.herokuapp.com/",
+      gitHubUrl: "https://github.com/Olivia-the-G/blogger",
+      image: "blogger-like-frogger.png",
+    },
+    {
+      title: "Hungry Mikey",
+      deployedUrl: "https://hungry-hungry-mikey-f614bbce79a1.herokuapp.com/game",
+      gitHubUrl: "https://github.com/Olivia-the-G/Hungry_Mikey",
+      image: "hungry-mikey.png",
+    },
+    {
+      title: "writeme.md",
+      gitHubUrl: "https://github.com/Olivia-the-G/writeme.md",
+      image: "placeholder.png",
+    },
+    {
+      title: "Lay Off the Graphic Designers",
+      gitHubUrl: "https://github.com/Olivia-the-G/lay-off-the-graphic-designers?tab=readme-ov-file",
+      image: "placeholder.png",
+    },
+    {
+      title: "Employee Tracking Chip",
+      gitHubUrl: "https://github.com/Olivia-the-G/employee-tracking-chip",
+      image: "placeholder.png",
+    },
+    {
+      title: "Thoughts on NoSQL",
+      gitHubUrl: "https://github.com/Olivia-the-G/thoughts-on-NoSQL",
+      image: "placeholder.png",
+    },
+    {
+      title: "Secret Shopper",
+      gitHubUrl: "https://github.com/Olivia-the-G/secret-shopper",
+      image: "placeholder.png",
+    },
+    {
+      title: "Whine About Wine",
+      gitHubUrl: "https://github.com/Olivia-the-G/next-new-niche",
+      image: "placeholder.png",
+    }
+  ];
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
+      items: 2,
+      slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 2 // optional, default to 1.
+      slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -62,50 +102,78 @@ function ProjectComponent({ deviceType }) {
 
   return (
     <div className="portfolio-carousel">
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={deviceType !== "mobile"}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={deviceType}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-      >
-        {projects.map((project, index) => (
-          <div key={index} className={`project-${index + 1}`}>
-            <section className="card project-card col">
-              <h2>{project.title}</h2>
-              <img src={project.image} alt={project.title} />
-              <div className="overlay">
-                <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
-                <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
-              </div>
-            </section>
-          </div>
-        ))}
-      </Carousel>;
-      <div>
-        <h1>Front End Projects</h1>
-      </div>
-      <div>
-        <h1>Back End Projects</h1>
-      </div>
+      <div className="front-end-projects-container">
+        <h2>Front End Projects</h2>
 
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={false}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={deviceType !== "mobile"}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="transform 300ms ease-in-out"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={deviceType}
+          itemClass="carousel-item-padding-40-px"
+          centerMode={true}
+        >
+          {frontEndProjects.map((project, index) => (
+            <div key={index} className={`project-${index + 1}`}>
+              <section className="card project-card col">
+                <h3>{project.title}</h3>
+                <img src={project.image} alt={project.title} />
+                <div className="overlay">
+                  <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
+                  <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
+                </div>
+              </section>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <div className="back-end-projects-container">
+        <h2>Back End Projects</h2>
+
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={false}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={deviceType !== "mobile"}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="transform 300ms ease-in-out"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={deviceType}
+          itemClass="carousel-item-padding-40-px"
+          centerMode={true}
+        >
+          {backEndProjects.map((project, index) => (
+            <div key={index} className={`project-${index + 1}`}>
+              <section className="card project-card col">
+                <h3>{project.title}</h3>
+                <img src={project.image} alt={project.title} />
+                <div className="overlay">
+                  <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
+                  <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
+                </div>
+              </section>
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };
 
 export default ProjectComponent;
-
-// To do: add carosel for projects 
-
-// To do: add different sections for front end and back end projects
