@@ -205,9 +205,10 @@ a:hover {
   backface-visibility: hidden;
 }
 
-.project-card h2 {
+.project-card h3 {
   text-align: center;
   padding: 10px;
+  font-size: 23px;
 }
 
 .overlay {
