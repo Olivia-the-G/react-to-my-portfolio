@@ -156,21 +156,33 @@ a:hover {
 } */
 
 .portfolio-carousel {
-  margin: 10px 50px 10px 50px;
+  margin-bottom: 30px;
+  width: 80%;
+  align-self: center;
 }
 
 .portfolio-card h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.portfolio-card h2 {
   margin: 20px;
   font-size: 30px;
   text-align: center;
 }
 
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.portfolio-title {
+  font-size: 40px;
+}
+
+.front-end-projects-container {
+  margin: 60px 0px;
+}
+
+.back-end-projects-container {
+  margin: 60px 0px;
 }
 
 .project-card {

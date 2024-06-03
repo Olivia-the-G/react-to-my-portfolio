@@ -29,7 +29,7 @@ function ProjectComponent({ deviceType }) {
       image: "kumamo.png",
     },
     {
-      title: "My First Portfolio Site",
+      title: "First Portfolio",
       deployedUrl: "https://olivia-the-g.github.io/Professional-Portfolio/#",
       gitHubUrl: "https://github.com/Olivia-the-G/Professional-Portfolio",
       image: "professional-portfolio.png",
@@ -45,7 +45,7 @@ function ProjectComponent({ deviceType }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 2,
       slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
@@ -60,52 +60,82 @@ function ProjectComponent({ deviceType }) {
     }
   };
 
+
+
   return (
     <div className="portfolio-carousel">
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        // autoPlay={deviceType !== "mobile"}
-        // autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={deviceType}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-      >
-        {projects.map((project, index) => (
-          <div key={index} className={`project-${index + 1}`}>
-            <section className="card project-card col">
-              <h2>{project.title}</h2>
-              <img src={project.image} alt={project.title} />
-              <div className="overlay">
-                <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
-                <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
-              </div>
-            </section>
-          </div>
-        ))}
-      </Carousel>;
-      <div>
-        <h1>Front End Projects</h1>
-      </div>
-      <div>
-        <h1>Back End Projects</h1>
-      </div>
+      <div className="front-end-projects-container">
+        <h2>Front End Projects</h2>
 
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={false}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={deviceType !== "mobile"}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="transform 300ms ease-in-out"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={deviceType}
+          itemClass="carousel-item-padding-40-px"
+          centerMode={true}
+        >
+          {projects.map((project, index) => (
+            <div key={index} className={`project-${index + 1}`}>
+              <section className="card project-card col">
+                <h2>{project.title}</h2>
+                <img src={project.image} alt={project.title} />
+                <div className="overlay">
+                  <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
+                  <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
+                </div>
+              </section>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <div className="back-end-projects-container">
+        <h2>Back End Projects</h2>
+
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={false}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={deviceType !== "mobile"}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="transform 300ms ease-in-out"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={deviceType}
+          itemClass="carousel-item-padding-40-px"
+          centerMode={true}
+        >
+          {projects.map((project, index) => (
+            <div key={index} className={`project-${index + 1}`}>
+              <section className="card project-card col">
+                <h2>{project.title}</h2>
+                <img src={project.image} alt={project.title} />
+                <div className="overlay">
+                  <a className="overlay-text" href={project.deployedUrl}>Deployed Project</a>
+                  <SocialIcon network="github" bgColor="#fff" fgColor="#2a2c46" url={project.gitHubUrl} />
+                </div>
+              </section>
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };
 
 export default ProjectComponent;
-
-// To do: add carosel for projects 
-
-// To do: add different sections for front end and back end projects
