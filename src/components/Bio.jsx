@@ -2,10 +2,32 @@ function BioComponent() {
   return (
     <div>
       <section className="card bio-card row">
-          <img src="profilephoto.jpg" alt="Olivia Gowan Photo" />
+        <img src="profilephoto.jpg" alt="Olivia Gowan Photo" />
         <div className="bio-text col">
           <h1>About Me</h1>
-          <p>My name is Olivia and I am a Full-Stack coder looking to enter the industry. I have taken a web development bootcamp at the University of Toronto which gave me the opportunity to learn and practice multiple coding languages and work on challenging projects with my classmates. Some of the projects created during this bootcamp are included on my portfolio page which can be found in the navigation bar at the top of the page. </p>
+          <div className="bio-sum-container row">
+            <div className="bio-summary">
+              <h2>Olivia Gowan</h2>
+              <p>Full-Stack Web Developer</p>
+            </div>
+            <div className="bio-summary">
+              <h2>Education</h2>
+              <p>University of Toronto Full Stack Web Developer Bootcamp</p>
+            </div>
+            <div className="bio-summary">
+              <h2>Languages</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Mongoose ODM</li>
+                <li>Sequelize</li>
+              </ul>
+            </div>
+            
+          </div>
         </div>
       </section>
     </div>
