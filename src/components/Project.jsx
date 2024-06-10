@@ -34,6 +34,11 @@ function ProjectComponent({ deviceType }) {
       deployedUrl: "https://floating-lowlands-42980-b282d39f2668.herokuapp.com/",
       gitHubUrl: "https://github.com/Olivia-the-G/notary-express",
       image: "notary-express.png",
+    },
+    {
+      title: "Whine About Wine",
+      gitHubUrl: "https://github.com/Olivia-the-G/next-new-niche",
+      image: "whine-about-wine.png",
     }
   ];
 
@@ -56,29 +61,29 @@ function ProjectComponent({ deviceType }) {
       image: "writeme.md.png",
     },
     {
-      title: "Lay Off the Graphic Designers",
+      title: "Lay Off the Designers",
       gitHubUrl: "https://github.com/Olivia-the-G/lay-off-the-graphic-designers?tab=readme-ov-file",
       image: "lay-off-the-graphic-designers.svg",
     },
     {
       title: "Employee Tracking Chip",
       gitHubUrl: "https://github.com/Olivia-the-G/employee-tracking-chip",
-      image: "placeholder.png",
+      image: "employee-tracking-chip.png",
     },
     {
       title: "Thoughts on NoSQL",
       gitHubUrl: "https://github.com/Olivia-the-G/thoughts-on-NoSQL",
-      image: "placeholder.png",
+      image: "thoughts-on-NoSQL.png",
     },
     {
       title: "Secret Shopper",
       gitHubUrl: "https://github.com/Olivia-the-G/secret-shopper",
-      image: "placeholder.png",
+      image: "secret-shopper.png",
     },
     {
       title: "Whine About Wine",
       gitHubUrl: "https://github.com/Olivia-the-G/next-new-niche",
-      image: "placeholder.png",
+      image: "whine-about-wine.png",
     }
   ];
 
