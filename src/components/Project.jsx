@@ -53,12 +53,12 @@ function ProjectComponent({ deviceType }) {
     {
       title: "writeme.md",
       gitHubUrl: "https://github.com/Olivia-the-G/writeme.md",
-      image: "placeholder.png",
+      image: "writeme.md.png",
     },
     {
       title: "Lay Off the Graphic Designers",
       gitHubUrl: "https://github.com/Olivia-the-G/lay-off-the-graphic-designers?tab=readme-ov-file",
-      image: "placeholder.png",
+      image: "lay-off-the-graphic-designers.svg",
     },
     {
       title: "Employee Tracking Chip",
