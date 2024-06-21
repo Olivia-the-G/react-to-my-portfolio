@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 20px 3px 20px;
   background-color: #919bf5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #2a2c46;
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 48px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -52,7 +52,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 6px 20px;
   background-color: #919bf5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -74,7 +74,7 @@ nav ul a {
 a {
   text-decoration: none;
   color: #acacac;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 a:hover {
@@ -113,24 +113,43 @@ a:hover {
   padding: 40px;
 }
 
+.bio-img {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.bio-text {
+  width: 100%;
+  margin-left: 10px;
+}
+
 .bio-card img {
   border-radius: 50%;
-  margin: 15px;
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 .bio-card h1 {
-  margin: 15px 15px 0px 15px;
-  font-size: 60px;
+  margin: 15px 15px 5px 15px;
+  font-size: 65px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .bio-card h2 {
-  margin: 15px;
-  font-size: 40px;
+  margin: 40px 15px 15px 15px;
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bio-card h3 {
+  font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -152,15 +171,38 @@ a:hover {
   justify-content: center;
 }
 
-.bio-summary {
+.bio-languages {
+  height: fit-content;
   background-color: #313131;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 70px;
   text-align: center;
-  max-width: 45%;
+  align-self: center;
+}
+
+.bio-languages h3 {
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 5px;
+}
+
+.bio-languages ul {
+  list-style: none;
+}
+
+.bio-languages li {
+  font-size: 20px;
+}
+
+.bio-summary {
+  padding: 15px;
   height: fit-content;
+  align-self: center;
 }
 
 .bio-summary h2 {
@@ -170,14 +212,6 @@ a:hover {
   font-style: normal;
 }
 
-.bio-summary ul {
-  list-style: none;
-  padding: 5px 10px 10px 10px;
-}
-
-.bio-summary li {
-  font-size: 20px;
-}
 
 @media screen and (max-width: 768px) {
   .bio-card img {
