@@ -61,7 +61,7 @@ function ProjectComponent({ deviceType }) {
       image: "writeme.md.png",
     },
     {
-      title: "Lay Off the Designers",
+      title: "Logo Generator",
       gitHubUrl: "https://github.com/Olivia-the-G/lay-off-the-graphic-designers?tab=readme-ov-file",
       image: "lay-off-the-graphic-designers.svg",
     },

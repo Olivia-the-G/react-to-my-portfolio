@@ -4,7 +4,9 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
   color: #acacac;
   background-color: #252525;
 }
@@ -17,10 +19,16 @@ header {
   background-color: #919bf5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #2a2c46;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header h1 {
   font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer {
@@ -58,6 +66,9 @@ nav ul a {
   text-decoration: none;
   color: #2a2c46;
   margin: 0 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -110,8 +121,19 @@ a:hover {
 }
 
 .bio-card h1 {
+  margin: 15px 15px 0px 15px;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bio-card h2 {
   margin: 15px;
-  font-size: 50px;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bio-card p {
@@ -122,6 +144,12 @@ a:hover {
 .bio-sum-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about-me {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .bio-summary {
@@ -135,9 +163,16 @@ a:hover {
   height: fit-content;
 }
 
+.bio-summary h2 {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .bio-summary ul {
   list-style: none;
-  padding: 10px;
+  padding: 5px 10px 10px 10px;
 }
 
 .bio-summary li {
@@ -183,24 +218,26 @@ a:hover {
 
 .portfolio-card h1 {
   margin-top: 25px;
-  font-size: 40px;
+  font-size: 42px;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .portfolio-card h2 {
   margin: 20px;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .portfolio-card p {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
   text-align: center;
-}
-
-.portfolio-title {
-  font-size: 40px;
 }
 
 .front-end-projects-container {
@@ -242,7 +279,10 @@ a:hover {
 .project-card h3 {
   text-align: center;
   padding: 10px;
-  font-size: 23px;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .overlay {
@@ -277,16 +317,10 @@ a:hover {
   justify-content: center;
 }
 
-.resume-card h1 {
-  text-align: center;
-  margin: 20px;
-  font-size: 30px;
-}
-
 .resume-card a {
   padding: 10px;
   margin: 20px 5px 5px 5px;
-  font-size: 20px;
+  font-size: 26px;
   background-color: #919bf5;
   color: #2a2c46;
   border: none;
@@ -295,6 +329,9 @@ a:hover {
   border-radius: 5px;
   width: fit-content;
   align-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .download-box {
@@ -307,7 +344,10 @@ a:hover {
 .download-box h2 {
   text-align: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .download-box ul {
@@ -347,7 +387,10 @@ a:hover {
 
 .contact-card h1 {
   margin: 10px;
-  font-size: 40px;
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .contact-card img {
@@ -376,32 +419,31 @@ a:hover {
   font-size: 20px;
 }
 
-.mess-box {
+/* .mess-box {
   padding: 10px;
-}
+} */
 
-label {
+/* label {
   padding: 5px;
   font-size: 20px;
   text-align: center;
-}
+} */
 
-input {
+/* input {
   padding: 5px;
   margin: 5px;
   font-size: 20px;
-}
+} */
 
-textarea {
+/* textarea {
   padding: 5px;
   margin: 5px;
   font-size: 20px;
-}
+} */
 
 button {
   padding: 5px;
   margin: 15px 0px 30px 0px;
-  font-size: 15px;
   background-color: #919bf5;
   color: #2a2c46;
   border: none;
@@ -414,7 +456,10 @@ button {
 button a {
   text-decoration: none;
   color: #2a2c46;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
