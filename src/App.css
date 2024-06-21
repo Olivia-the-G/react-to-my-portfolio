@@ -4,7 +4,9 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
   color: #acacac;
   background-color: #252525;
 }
@@ -13,14 +15,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 20px 3px 20px;
   background-color: #919bf5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #2a2c46;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 48px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer {
@@ -44,7 +52,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 6px 20px;
   background-color: #919bf5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -58,12 +66,15 @@ nav ul a {
   text-decoration: none;
   color: #2a2c46;
   margin: 0 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   color: #acacac;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 a:hover {
@@ -102,27 +113,105 @@ a:hover {
   padding: 40px;
 }
 
+.bio-img {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.bio-text {
+  width: 100%;
+  margin-left: 10px;
+}
+
 .bio-card img {
   border-radius: 50%;
-  margin: 15px;
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 .bio-card h1 {
-  margin: 15px;
-  font-size: 50px;
+  margin: 15px 15px 5px 15px;
+  font-size: 65px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bio-card h2 {
+  margin: 40px 15px 15px 15px;
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bio-card h3 {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bio-card p {
-  margin: 25px 15px 15px 15px;
   font-size: 21px;
   line-height: 28px;
 }
 
-.bio-text {
-  margin: 10px 40px;
+.bio-sum-container {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.about-me {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-languages {
+  height: fit-content;
+  background-color: #313131;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 70px;
+  text-align: center;
+  align-self: center;
+}
+
+.bio-languages h3 {
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 5px;
+}
+
+.bio-languages ul {
+  list-style: none;
+}
+
+.bio-languages li {
+  font-size: 20px;
+}
+
+.bio-summary {
+  padding: 15px;
+  height: fit-content;
+  align-self: center;
+}
+
+.bio-summary h2 {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 @media screen and (max-width: 768px) {
   .bio-card img {
@@ -163,24 +252,26 @@ a:hover {
 
 .portfolio-card h1 {
   margin-top: 25px;
-  font-size: 40px;
+  font-size: 42px;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .portfolio-card h2 {
   margin: 20px;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .portfolio-card p {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
   text-align: center;
-}
-
-.portfolio-title {
-  font-size: 40px;
 }
 
 .front-end-projects-container {
@@ -222,7 +313,10 @@ a:hover {
 .project-card h3 {
   text-align: center;
   padding: 10px;
-  font-size: 23px;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .overlay {
@@ -257,16 +351,10 @@ a:hover {
   justify-content: center;
 }
 
-.resume-card h1 {
-  text-align: center;
-  margin: 20px;
-  font-size: 30px;
-}
-
 .resume-card a {
   padding: 10px;
   margin: 20px 5px 5px 5px;
-  font-size: 20px;
+  font-size: 26px;
   background-color: #919bf5;
   color: #2a2c46;
   border: none;
@@ -275,6 +363,9 @@ a:hover {
   border-radius: 5px;
   width: fit-content;
   align-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .download-box {
@@ -287,7 +378,10 @@ a:hover {
 .download-box h2 {
   text-align: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .download-box ul {
@@ -327,7 +421,10 @@ a:hover {
 
 .contact-card h1 {
   margin: 10px;
-  font-size: 40px;
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .contact-card img {
@@ -356,32 +453,31 @@ a:hover {
   font-size: 20px;
 }
 
-.mess-box {
+/* .mess-box {
   padding: 10px;
-}
+} */
 
-label {
+/* label {
   padding: 5px;
   font-size: 20px;
   text-align: center;
-}
+} */
 
-input {
+/* input {
   padding: 5px;
   margin: 5px;
   font-size: 20px;
-}
+} */
 
-textarea {
+/* textarea {
   padding: 5px;
   margin: 5px;
   font-size: 20px;
-}
+} */
 
 button {
   padding: 5px;
   margin: 15px 0px 30px 0px;
-  font-size: 15px;
   background-color: #919bf5;
   color: #2a2c46;
   border: none;
@@ -394,7 +490,10 @@ button {
 button a {
   text-decoration: none;
   color: #2a2c46;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {

@@ -2,10 +2,35 @@ function BioComponent() {
   return (
     <div>
       <section className="card bio-card row">
+        <div className="bio-img col">
           <img src="profilephoto.jpg" alt="Olivia Gowan Photo" />
+          <div className="bio-languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Express</li>
+              <li>Mongoose ODM</li>
+              <li>Sequelize</li>
+            </ul>
+          </div>
+        </div>
         <div className="bio-text col">
-          <h1>About Me</h1>
-          <p>My name is Olivia and I am a Full-Stack coder looking to enter the industry. I have taken a web development bootcamp at the University of Toronto which gave me the opportunity to learn and practice multiple coding languages and work on challenging projects with my classmates. Some of the projects created during this bootcamp are included on my portfolio page which can be found in the navigation bar at the top of the page. </p>
+          <h1>Hi, I'm Olivia.</h1>
+          <div className="bio-sum-container row">
+            <div className="about-me">
+              <p>I'm a Full-Stack Web Developer based out of Kingston, ON. As a developer, I am passionate about creating efficient and streamlined databases and learning different coding languages in order to make my job, and everyone else's, just a little bit easier. I've worked on multiple large projects in a team environment where I've developed and honed my abilities as a project leader. Working with my colleagues has given me a love for coding and I hope to one day be able to pursue this job full time as a skilled and experienced web developer. </p>
+            </div>
+          </div>
+          <h2>Here's a brief overview</h2>
+          <div className="bio-sum-container row">
+            <div className="bio-summary">
+              <h3>Education</h3>
+              <p>University of Toronto Full Stack Web Developer Bootcamp</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
